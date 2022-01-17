@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">RoomDatabase</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Movie Creator</string>
+    <string name="view_available_movies">View available movies</string>
+    <string name="all_saved_movies">|| All saved Movies ||</string>
+    <string name="movie_s_name">Movie\'s name</string>
+    <string name="year_of_release">Year of release…</string>
+    <string name="movie_rating">Movie rating…</string>
+    <string name="create_a_new_movie">Create a new Movie</string>
+    <string name="year_of_release_">Year of release:</string>
+</resources>

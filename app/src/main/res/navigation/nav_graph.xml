@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/nav_graph"
+app:startDestination="@id/addNewMoviePage">
+
+    <fragment
+    android:id="@+id/addNewMoviePage"
+    android:name="com.vsc.roomdatabase.view.AddNewMoviePage"
+    android:label="fragment_add_new_movie_page"
+    tools:layout="@layout/fragment_add_new_movie_page" >
+    <action
+        android:id="@+id/fragmentFirstToFragmentViewMovies"
+        app:destination="@id/fragmentViewMovies" />
+</fragment>
+    <fragment
+        android:id="@+id/fragmentViewMovies"
+        android:name="com.vsc.roomdatabase.view.FragmentViewMovies"
+        android:label="fragment_view_movies"
+        tools:layout="@layout/fragment_view_movies" >
+        <action
+            android:id="@+id/action_fragmentViewMovies_to_addNewMoviePage"
+            app:destination="@id/addNewMoviePage" />
+    </fragment>
+
+</navigation>

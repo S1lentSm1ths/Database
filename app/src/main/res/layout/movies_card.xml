@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/firstPageTitle"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/movie_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dsadsad"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/movie_year_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/year_of_release_"
+        app:layout_constraintTop_toBottomOf="@+id/movie_title"
+        app:layout_constraintBottom_toBottomOf="@+id/movie_title"
+        app:layout_constraintStart_toEndOf="@+id/movie_title"
+        />
+
+    <TextView
+        android:id="@+id/movie_year_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="fdsfdsfsadas"
+        app:layout_constraintTop_toTopOf="@+id/movie_year_text"
+        app:layout_constraintBottom_toBottomOf="@+id/movie_year_text"
+        app:layout_constraintStart_toEndOf="@+id/movie_year_text"
+        />
+
+    <TextView
+        android:id="@+id/movie_rating_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="rating of the movie:"
+        app:layout_constraintTop_toTopOf="@+id/movie_year_text"
+        app:layout_constraintBottom_toBottomOf="@+id/movie_year_text"
+        app:layout_constraintStart_toEndOf="@+id/movie_year_number"
+        />
+
+    <TextView
+        android:id="@+id/movie_rating_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10"
+        app:layout_constraintTop_toTopOf="@+id/movie_year_text"
+        app:layout_constraintBottom_toBottomOf="@+id/movie_year_text"
+        app:layout_constraintStart_toEndOf="@+id/movie_rating_text"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
